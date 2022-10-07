@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <meta name="description" content="Get in Touch">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Contact Us </title>
+      <link rel="stylesheet" href="contact-form.css">
+   </head>
+   <body>
+      <form>
+         <div class="line"><span><i class="fa-solid fa-square fa-2xs"></i></span> <span><i class="fa-solid fa-circle fa-2xs"></i></span> <span><i class="fa-solid fa-diamond fa-2xs"></i></span> </div>
+         <nav class="contact">
+            <div> 
+               <span id="lines">&#8801;</span> Contact
+            </div> 
+            <div> 
+                <span class="span"><i class="fa-solid fa-magnifying-glass fa-md"></i></span> 
+            </div> 
+            <div>  
+                <span id="span"><i class="fa-solid fa-ellipsis-vertical fa-md"></i></span>
+            </div>  
+            </div>
+         </nav>
+         <div class="page">
+         <div class="name">
+            <i class="fa-solid fa-user fa-xl"></i>
+            <input type="text" placeholder="Name" for="name" id="name">
+         </div>
+         <div class="number">
+            <i class="fa-solid fa-phone fa-xl"></i>
+            <input type="number" minlength="3" maxlength="4" class="areaCode" placeholder="1-800">
+            <span> <input type="number" name="number" id="number" placeholder="123-4567" required="number" minlength="7" maxlength="8"></span>
+         </div>
+         <div class="address">
+            <i class="fa-solid fa-location-dot fa-xl"></i>
+            <input type="text" name="address" id="address" placeholder="Address">
+         </div>
+         <div class="city">
+            <input type="text" name="city" for="address" id="city" placeholder="City">
+         </div>
+         <div class="location">
+            <select name="state" id="state" for="address" size="1">
+                  <option value="AK">AK</option>
+                  <option value="AL">AL</option>
+                  <option value="AR">AR</option>
+                  <option value="AZ">AZ</option>
+                  <option value="CA">CA</option>
+                  <option value="CO">CO</option>
+                  <option value="CT">CT</option>
+                  <option value="DC">DC</option>
+                  <option value="DE">DE</option>
+                  <option value="FL">FL</option>
+                  <option value="GA">GA</option>
+                  <option value="HI">HI</option>
+                  <option value="IA">IA</option>
+                  <option value="ID">ID</option>
+                  <option value="IL">IL</option>
+                  <option value="IN">IN</option>
+                  <option value="KS">KS</option>
+                  <option value="KY">KY</option>
+                  <option value="LA">LA</option>
+                  <option value="MA">MA</option>
+                  <option value="MD">MD</option>
+                  <option value="ME">ME</option>
+                  <option value="MI">MI</option>
+                  <option value="MN">MN</option>
+                  <option value="MO">MO</option>
+                  <option value="MS">MS</option>
+                  <option value="MT">MT</option>
+                  <option value="NC">NC</option>
+                  <option value="ND">ND</option>
+                  <option value="NE">NE</option>
+                  <option value="NH">NH</option>
+                  <option value="NJ">NJ</option>
+                  <option value="NM">NM</option>
+                  <option value="NV">NV</option>
+                  <option value="NY">NY</option>
+                  <option value="OH">OH</option>
+                  <option value="OK">OK</option>
+                  <option value="OR">OR</option>
+                  <option value="PA">PA</option>
+                  <option value="RI">RI</option>
+                  <option value="SC">SC</option>
+                  <option value="SD">SD</option>
+                  <option value="TN">TN</option>
+                  <option value="TX">TX</option>
+                  <option value="UT">UT</option>
+                  <option value="VA">VA</option>
+                  <option value="VT">VT</option>
+                  <option value="WA">WA</option>
+                  <option value="WI">WI</option>
+                  <option value="WV">WV</option>
+                  <option value="WY">WY</option>
+            </select>
+            <input for="address" id="zip" name="zip" type="text" placeholder="Zip">
+         </div>
+         <div>
+            <i class="fa-solid fa-envelope fa-xl"></i>
+            <input type="text" name="email" id="email" placeholder="Email">
+         </div>
+         <div>
+            <i class="fa-regular fa-calendar-days fa-xl"></i>
+            <input type="date" placeholder="Birthday" class="date">
+         </div>
+      </div>
+      </form>
+      <script src="https://kit.fontawesome.com/cb3a8f0d50.js" crossorigin="anonymous"></script>
+      <script>
+         // selecting all input type 'numbers'
+         document.querySelectorAll('input[type="number"]').forEach(input =>{input.oninput = () =>{ if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+         };
+      });
+      </script>
+   </body>
+</html>

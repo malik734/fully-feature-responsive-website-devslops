@@ -1,0 +1,81 @@
+body {
+   font-family: "Open Sans", sans-serif;
+   font-weight: 400;
+   line-height: 1.6;
+   letter-spacing: 0;
+   color: var(--font-color-base);
+   margin: 0;
+   padding: 0;
+   font-size: 0.875rem;
+   background-color: darkgrey;
+}
+
+.page { margin-left: 25px; max-width: 300px; margin-top: 20px;}
+
+*,
+::after,
+::before {
+   box-sizing: border-box;
+}
+span { padding-right:}
+
+nav {
+   background-color: rgba(69, 17, 151, 0.869);
+   padding: 15px 10px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   box-shadow: 1px 2px 4px ghostwhite;
+   color: white;
+   font-weight: 200;
+   font-size: large;
+}
+input {
+   border-radius: 3px;
+   box-shadow: 0px 10px 20px rgba(255, 255, 255, .55);
+   height: 50px; width: 275px;
+   margin: 10px 0px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+
+}
+input:hover {
+   background-color: aliceblue;
+}
+#name { margin-left: 2px; background-color: #F8F8FF;}
+#number { width: 200px; border-radius: 5px; border: 2px solid grey;}
+.areaCode { width: 70px; border-radius: 5px; border: 2px solid grey;}
+#address { margin-left: 5px; background-color: ghostwhite}
+#city { margin-left: 25px; border-radius: 5px; border: 2px solid grey;}
+.location { display: flex;}
+#state { width: 100px; margin-left: 25px; background-color: ghostwhite;}
+#zip { width: 180px; margin-left: 10px; margin-top: auto; background-color: ghostwhite;}
+#email {border-radius: 5px; border: 2px solid grey;}
+
+select {
+   border-radius: 3px;
+   box-shadow: 0px 10px 20px rgba(255, 255, 255, .55);
+   height: 50px; width: 70px;
+   margin: 10px 0px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 2px solid grey;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+}
+.line { width: 100%; background-color: rgb(59, 4, 110);
+height: 15px;}
+.line span {
+   position: relative;
+   top: -3px;
+   left: 340px;
+   color: rgba(255, 255, 255, 0.302)
+}
+#lines { margin-right: 50px; font-size: x-large; font-weight: 500; margin-top: 0px;}
+.span {margin-left: 120px; font-weight: 100;}
+#span {margin-left: -10px;}
+.date { background-color: ghostwhite}
